@@ -7,8 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.zhao.sliding.SlidingMenuActivity;
-
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TextView text;
@@ -27,10 +25,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void initWidget() {
         text = (TextView) findViewById(R.id.text);
         btn = (Button) findViewById(R.id.btn);
-        btnSliding = (Button) findViewById(R.id.btn_sliding);
 
         btn.setOnClickListener(this);
-        btnSliding.setOnClickListener(this);
     }
 
     @Override
@@ -40,10 +36,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.btn:
                 intent.setClass(this, ListViewActivity.class);
-                startActivity(intent);
-                break;
-            case R.id.btn_sliding:
-                intent.setClass(this, SlidingMenuActivity.class);
                 startActivity(intent);
                 break;
             default:

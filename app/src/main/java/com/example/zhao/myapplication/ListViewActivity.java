@@ -30,7 +30,8 @@ public class ListViewActivity extends AppCompatActivity implements AdapterView.O
 
         ListView lv = (ListView) findViewById(R.id.list_view);
 
-        lv.addHeaderView(LayoutInflater.from(this).inflate(R.layout.list_view_header_layout, lv, false));
+        View headerView = LayoutInflater.from(this).inflate(R.layout.list_view_header_layout, lv, false);
+        lv.addHeaderView(headerView, null, false);
 
         MyAdapter myAdapter = new MyAdapter(this, data);
         lv.setAdapter(myAdapter);

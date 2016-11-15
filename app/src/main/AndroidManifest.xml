@@ -16,8 +16,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".ListViewActivity"/>
-        <activity android:name="com.example.zhao.sliding.SlidingMenuActivity">
-        </activity>
     </application>
 
 </manifest>
