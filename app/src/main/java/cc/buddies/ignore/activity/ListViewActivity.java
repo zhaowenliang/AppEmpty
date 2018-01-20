@@ -1,4 +1,4 @@
-package com.example.zhao.myapplication;
+package cc.buddies.ignore.activity;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.example.zhao.myapplication.R;
 
 import java.util.ArrayList;
 import java.util.List;
