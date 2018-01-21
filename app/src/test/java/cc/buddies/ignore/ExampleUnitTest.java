@@ -1,4 +1,4 @@
-package com.example.zhao.myapplication;
+package cc.buddies.ignore;
 
 import org.junit.Test;
 
